@@ -1,5 +1,9 @@
 package com.keybank.balance.service;
 
-public class IBalanceService {
+import com.keybank.balance.model.BalanceRequest;
+import com.keybank.balance.model.BalanceResponse;
 
+public interface IBalanceService {
+ 
+	BalanceResponse getBalance(BalanceRequest balanceRequest);
 }
